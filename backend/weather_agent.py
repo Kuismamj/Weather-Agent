@@ -4,7 +4,7 @@ import requests
 from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 from flask_cors import CORS
-import os
+
 
 app = Flask(__name__)
 CORS(app)
@@ -61,4 +61,6 @@ def weather():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    
