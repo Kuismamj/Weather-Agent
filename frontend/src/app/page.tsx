@@ -18,7 +18,7 @@ export default function Home() {
   useEffect(() => {
     if (started && coords) {
       fetch(
-        "http://localhost:5000/api/weather?lat=" +
+        "https://weather-agent-tp2i.onrender.com/api/weather?lat=" +
           coords.lat +
           "&lon=" +
           coords.lon
