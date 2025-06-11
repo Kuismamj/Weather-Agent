@@ -4,6 +4,7 @@ import requests
 from langchain_ollama import OllamaLLM
 from langchain.prompts import PromptTemplate
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)
