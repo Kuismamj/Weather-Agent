@@ -63,6 +63,8 @@ Open your browser and go to [http://localhost:3000](http://localhost:3000)
 - Dark background image and responsive design
 
 ---
+Test here: https://weatheragent1.netlify.app/
+NOTE: This project’s full functionality does not work on Netlify because the backend relies on a local Large Language Model (LLM, e.g. Ollama) that cannot be hosted on Render or other free cloud platforms. Therefore it "analyzes the weather" endlessly. It should be looking like this https://ibb.co/dhRjm84. 
 
 **Note:**  
 If frontend and backend run on different ports, make sure the backend URL is correct in the frontend fetch requests.
